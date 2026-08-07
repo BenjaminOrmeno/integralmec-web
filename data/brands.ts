@@ -1,0 +1,18 @@
+export const brands = [
+  "Toyota",
+  "Chevrolet",
+  "Hyundai",
+  "Kia",
+  "Nissan",
+  "Mazda",
+  "Mitsubishi",
+  "Suzuki",
+  "Peugeot",
+  "Citroën",
+  "Volkswagen",
+  "Ford",
+  "BMW",
+  "Mercedes-Benz",
+  "Audi",
+  "Volvo",
+];
