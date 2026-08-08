@@ -15,8 +15,8 @@
     --foreground: #ededed;
   }
 }
-@keyframes marquee {
 
+@keyframes marquee {
   from {
     transform: translateX(0);
   }
@@ -24,37 +24,45 @@
   to {
     transform: translateX(-50%);
   }
-
 }
 
 .animate-marquee {
-
   width: max-content;
-
   animation: marquee 30s linear infinite;
-
 }
 
 .animate-marquee:hover {
-
   animation-play-state: paused;
-
 }
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
 @keyframes slowZoom {
-
-  from{
-    transform:scale(1);
+  from {
+    transform: scale(1);
   }
 
-  to{
-    transform:scale(1.08);
+  to {
+    transform: scale(1.08);
   }
+}
 
-}html {
+html {
   scroll-behavior: smooth;
+}
+
+/* Corrección exclusiva para dispositivos móviles:
+   evita que elementos demasiado anchos generen
+   desplazamiento horizontal y dejen ver el fondo del body. */
+@media (max-width: 767px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 }
