@@ -6,9 +6,9 @@ export const company = {
   description:
     "Especialistas en mantención preventiva, diagnóstico computarizado, reparación mecánica y atención de flotas para empresas y particulares.",
 
-  phone: "+56 9 3286 0392",
+  phone: "+56 9 4949 0324",
 
-  whatsapp: "56932860392",
+  whatsapp: "56949490324",
 
   email: "contacto.integralmec@gmail.com",
 
